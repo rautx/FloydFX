@@ -114,7 +114,7 @@ public class GrafoFloyd {
             // verifica se chegou em um separador de coluna
             if (c == ' ' || c == '\t' || c == '\r' || c == '\n') {
                 if (token.length() > 0 && colIdx < this.qtdVertices) {
-                    this.dist[linhaIdx][colIdx] = converterPeso(linhaIdx, colIdx, token); // string p int
+                    this.dist[linhaIdx][colIdx] = converterPeso(linhaIdx, colIdx, token); // string p/ int
                     this.sol[linhaIdx][colIdx] = 0; // inicia a matriz de solucao em 0
                     colIdx = colIdx + 1;
                     token = "";
